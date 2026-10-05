@@ -49,7 +49,12 @@
       "platforms": {
         "windows": {
           "defines": [
+            "ZEND_WIN32=1",
+            "PHP_WIN32=1",
+            "ZEND_DEBUG=0",
+            "ENABLE_INTSAFE_SIGNED_FUNCTIONS=1",
             "PCRE2_STATIC=1",
+            "LEXBOR_STATIC=1",
             "NOMINMAX=1"
           ],
           "include-dirs": [
